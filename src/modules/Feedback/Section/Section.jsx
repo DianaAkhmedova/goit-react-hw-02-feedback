@@ -1,10 +1,19 @@
+import PropTypes from 'prop-types';
+
+import { FeedbackBlock } from './Section.styled';
+
 const Section = ({ children, title }) => {
   return (
-    <div>
+    <FeedbackBlock>
       <h3>{title}</h3>
       {children}
-    </div>
+    </FeedbackBlock>
   );
 };
 
 export default Section;
+
+Section.propTypes = {
+  children: PropTypes.element.isRequired,
+  title: PropTypes.string,
+};
