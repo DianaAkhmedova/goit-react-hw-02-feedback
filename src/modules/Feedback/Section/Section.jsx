@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
-
-import { FeedbackBlock } from './Section.styled';
+import { FeedbackBlock, SectionTitle } from './Section.styled';
 
 const Section = ({ children, title }) => {
   return (
     <FeedbackBlock>
-      <h3>{title}</h3>
+      {title && <SectionTitle>{title}</SectionTitle>}
       {children}
     </FeedbackBlock>
   );

@@ -3,7 +3,6 @@ import Section from './Section/Section';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Statistics from './Statistics/Statistics';
 import Notification from './Notification/Notification';
-
 import { FeedbackSection } from './Feedback.styled';
 
 class Feedback extends Component {
@@ -55,7 +54,7 @@ class Feedback extends Component {
         </Section>
         {!total ? (
           <Section>
-            <Notification message="There is no feedback" />
+            <Notification message="There is no feedback..." />
           </Section>
         ) : (
           <Section title="Statistics">
